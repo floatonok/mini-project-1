@@ -1,0 +1,14 @@
+@import url("./_reset.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: futura;
+    font-size: 16px;
+}
