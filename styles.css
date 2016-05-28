@@ -10,40 +10,65 @@
     font-size: 16px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 h1 {
     font-size: 3.6em;
     text-align: left;
+    padding: 0px;
 }
 
 h2 {
     font-size: 1.6em;
 }
 
-/*grid*/
+/*grid index*/
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 700px;
+    height: 700px;
     margin: 10px auto;
-    border: 1px solid red;
 }
 
 .row {
-    /*border: 1px solid black;*/
     display: flex;
     justify-content: space-between;
 
 }
 
-.col {
+.square {
     border: 2px dashed black;
-    height: 0px;
-    padding-bottom: 32%;
     text-align: center;
-    padding-top: 2%;
+    flex: 1;
+    padding: 1%;
+    max-height: 33.3%;
 }
 
-.one-of-3 {
+/* grid biography*/
+
+.main-biography {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section {
+    border: 2px dashed black;
+    border-left: 0;
+    flex: 2;
+    padding: 2%;
+    overflow: auto;
 }
 
 /*grid border*/
@@ -67,7 +92,6 @@ main {
 }
 
 /* blue border*/
-
 
 .border-tl {
     background: url(./images/border-tl.png) no-repeat;
@@ -96,25 +120,17 @@ main {
     background-position: bottom right;
 }
 
+.border-bio {
+    background: url(./images/border-tl.png) no-repeat, url(./images/border-br.png) right bottom no-repeat;
+    background-origin: border-box;
+    background-size: 28%;
+}
+
 /*grid content*/
 a,img,h1,h2 {
     border: 1px solid red;
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
-}
-
-/*section*/
-
-section {
-    border: 1px solid green;
-    position: absolute;
-    max-width: 700px;
-}
-
-article {
-    border: 1px solid yellow;
-    max-width: 66.6%;
-    float: right;
 }
 
 /*footer*/
@@ -140,12 +156,14 @@ footer {
         font-size: 1.2em;
     }
 
-    main, section, footer {
-        width: 90%;
+    main, footer {
+        width: 600px;
+        height: 600px;
     }
+
 }
 
-@media (max-width: 460px) {
+@media (max-width: 400px) {
     * {
         font-size: 12px;
     }
@@ -156,5 +174,10 @@ footer {
 
     h2 {
         font-size: 1.1em;
+    }
+
+    main, footer {
+        width: 320px;
+        height: 320px;
     }
 }
