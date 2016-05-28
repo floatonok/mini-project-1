@@ -22,10 +22,9 @@ h2 {
 /*grid*/
 
 main {
-
     width: 700px;
     margin: 10px auto;
-    /*border: 1px solid black;*/
+    border: 1px solid red;
 }
 
 .row {
@@ -80,7 +79,7 @@ main {
     background: url(./images/border-tr.png) no-repeat;
     background-origin: border-box;
     background-size: 50%;
-    background-position: right;
+    background-position: top right;
 }
 
 .border-bl {
@@ -97,11 +96,25 @@ main {
     background-position: bottom right;
 }
 
-/*content*/
+/*grid content*/
 a,img,h1,h2 {
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     max-width: 90%;
     margin: 0 auto;
+}
+
+/*section*/
+
+section {
+    border: 1px solid green;
+    position: absolute;
+    max-width: 700px;
+}
+
+article {
+    border: 1px solid yellow;
+    max-width: 66.6%;
+    float: right;
 }
 
 /*footer*/
@@ -127,11 +140,7 @@ footer {
         font-size: 1.2em;
     }
 
-    main {
-        width: 90%;
-    }
-
-    footer {
+    main, section, footer {
         width: 90%;
     }
 }
