@@ -6,9 +6,115 @@
     padding: 0px;
     text-decoration: none;
     list-style: none;
-}
-
-html {
     font-family: futura;
     font-size: 16px;
+}
+
+/*grid*/
+
+main {
+    width: 55%;
+    max-width: 700px;
+    margin: 10px auto;
+    /*border: 1px solid black;*/
+}
+
+.row {
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.col {
+    border: 1px dashed black;
+    height: 0px;
+    padding-bottom: 30%;
+}
+
+.one-of-3 {
+    flex: 1;
+}
+
+/*grid border*/
+
+.NS {
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.EW {
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 1px dashed black;
+    border-left: 1px dashed black;
+}
+
+.center {
+    border: 0;
+}
+
+/*hr {
+    border-color: black;
+}
+
+.vertical {
+    width: 1px;
+    height: 0;
+    padding-bottom: 55%;
+    position: absolute;
+}*/
+
+/*border*/
+
+
+.border-tl {
+    /*width: 50%;
+    height: 0px;
+    padding-bottom: 45%;
+    border-top: 3px solid blue;
+    border-left: 3px solid blue;*/
+    background: url(./images/border-tl.png) no-repeat;
+    background-size: 50%;
+}
+
+.border-tr {
+    border-right: 3px solid blue;
+    border-top: 3px solid blue;
+}
+
+.border-bl {
+    border-bottom: 3px solid blue;
+    border-left: 3px solid blue;
+}
+
+.border-br {
+    /*border-bottom: 3px solid blue;
+    border-right: 3px solid blue;
+    /*float: right;
+    vertical-align: bottom;*/
+    background: url(./images/border-br.png) no-repeat;
+    background-size: 50%;
+    background-position: bottom right;
+}
+
+/*footer*/
+
+footer {
+    width: 55%;
+    margin: 0 auto;
+}
+
+/*responsive*/
+
+@media (max-width: 800px) {
+    main {
+        width: 90%;
+    }
+
+    footer {
+        width: 90%;
+    }
 }
