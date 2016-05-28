@@ -10,11 +10,20 @@
     font-size: 16px;
 }
 
+h1 {
+    font-size: 3.6em;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
 /*grid*/
 
 main {
-    width: 55%;
-    max-width: 700px;
+
+    width: 700px;
     margin: 10px auto;
     /*border: 1px solid black;*/
 }
@@ -27,9 +36,11 @@ main {
 }
 
 .col {
-    border: 1px dashed black;
+    border: 2px dashed black;
     height: 0px;
-    padding-bottom: 30%;
+    padding-bottom: 32%;
+    text-align: center;
+    padding-top: 2%;
 }
 
 .one-of-3 {
@@ -39,8 +50,8 @@ main {
 /*grid border*/
 
 .NS {
-    border-top: 1px dashed black;
-    border-bottom: 1px dashed black;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
     border-right: 0px;
     border-left: 0px;
 }
@@ -48,73 +59,93 @@ main {
 .EW {
     border-top: 0;
     border-bottom: 0;
-    border-right: 1px dashed black;
-    border-left: 1px dashed black;
+    border-right: 2px dashed black;
+    border-left: 2px dashed black;
 }
 
 .center {
     border: 0;
 }
 
-/*hr {
-    border-color: black;
-}
-
-.vertical {
-    width: 1px;
-    height: 0;
-    padding-bottom: 55%;
-    position: absolute;
-}*/
-
-/*border*/
+/* blue border*/
 
 
 .border-tl {
-    /*width: 50%;
-    height: 0px;
-    padding-bottom: 45%;
-    border-top: 3px solid blue;
-    border-left: 3px solid blue;*/
     background: url(./images/border-tl.png) no-repeat;
+    background-origin: border-box;
     background-size: 50%;
 }
 
 .border-tr {
-    border-right: 3px solid blue;
-    border-top: 3px solid blue;
+    background: url(./images/border-tr.png) no-repeat;
+    background-origin: border-box;
+    background-size: 50%;
+    background-position: right;
 }
 
 .border-bl {
-    border-bottom: 3px solid blue;
-    border-left: 3px solid blue;
+    background: url(./images/border-bl.png) no-repeat;
+    background-origin: border-box;
+    background-size: 50%;
+    background-position: bottom left;
 }
 
 .border-br {
-    /*border-bottom: 3px solid blue;
-    border-right: 3px solid blue;
-    /*float: right;
-    vertical-align: bottom;*/
     background: url(./images/border-br.png) no-repeat;
+    background-origin: border-box;
     background-size: 50%;
     background-position: bottom right;
+}
+
+/*content*/
+a,img,h1,h2 {
+    /*border: 1px solid red;*/
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 /*footer*/
 
 footer {
-    width: 55%;
+    font-size: 12px;
+    width: 700px;
     margin: 0 auto;
 }
 
 /*responsive*/
 
 @media (max-width: 800px) {
+    * {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2.7em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
     main {
         width: 90%;
     }
 
     footer {
         width: 90%;
+    }
+}
+
+@media (max-width: 460px) {
+    * {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.1em;
     }
 }
