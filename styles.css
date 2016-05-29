@@ -24,6 +24,10 @@ h2 {
     font-size: 1.6em;
 }
 
+a:visited {
+    color: blue;
+}
+
 /*grid index*/
 
 main {
@@ -49,6 +53,18 @@ main {
     max-height: 33.3%;
 }
 
+.sq-bio {
+    padding: 5%;
+}
+
+.padding-13 {
+    padding-top: 13%;
+}
+
+.padding-5 {
+    padding-top: 5%;
+}
+
 /* grid biography.html*/
 
 .main-biography {
@@ -71,6 +87,7 @@ section {
     padding: 3%;
     overflow: auto;
 }
+
 
 /*grid border*/
 
@@ -137,12 +154,12 @@ section {
 
 /*grid content*/
 a,img,h1,h2 {
-    border: 1px solid red;
     max-width: 100%;
 }
 
-.main-biography .square a,h2 {
+.main-biography h2 {
     position: absolute;
+    color: blue;
 }
 
 /*footer*/
@@ -161,7 +178,7 @@ footer {
     }
 
     h1 {
-        font-size: 2.7em;
+        font-size: 3.4em;
     }
 
     h2 {
@@ -181,7 +198,7 @@ footer {
     }
 
     h1 {
-        font-size: 1.9em;
+        font-size: 2.1em;
     }
 
     h2 {
@@ -200,6 +217,10 @@ footer {
         height: 420px;
         flex-direction: column-reverse;
         justify-content: space-between;
+    }
+
+    .sq-bio {
+        padding: 2%;
     }
 
     section {
