@@ -49,15 +49,16 @@ main {
     max-height: 33.3%;
 }
 
-/* grid biography*/
+/* grid biography.html*/
 
 .main-biography {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 nav {
-    flex: 1;
+    flex: 1 0 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -66,8 +67,8 @@ nav {
 section {
     border: 2px dashed black;
     border-left: 0;
-    flex: 2;
-    padding: 2%;
+    flex: 2 0 400px;
+    padding: 3%;
     overflow: auto;
 }
 
@@ -86,6 +87,14 @@ section {
     border-right: 2px dashed black;
     border-left: 2px dashed black;
 }
+
+.EW-bio {
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 2px dashed black;
+    border-left: 2px dashed black;
+}
+
 
 .center {
     border: 0;
@@ -130,7 +139,10 @@ section {
 a,img,h1,h2 {
     border: 1px solid red;
     max-width: 100%;
-    margin: 0 auto;
+}
+
+.main-biography .square a,h2 {
+    position: absolute;
 }
 
 /*footer*/
@@ -163,21 +175,49 @@ footer {
 
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
     * {
         font-size: 12px;
     }
 
     h1 {
-        font-size: 2.2em;
+        font-size: 1.9em;
     }
 
     h2 {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     main, footer {
-        width: 320px;
-        height: 320px;
+        width: 315px;
+        height: 315px;
     }
+
+    /*biography*/
+
+    .main-biography {
+        width: 315px;
+        height: 420px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    section {
+        flex: 3;
+        border: 2px dashed black;
+        border-bottom: 0;
+    }
+
+    nav {
+        flex: 1;
+        flex-direction: row;
+    }
+
+    .EW-bio {
+        border-top: 2px dashed black;
+        border-bottom: 2px dashed black;
+        border-right: 0px;
+        border-left: 0px;
+    }
+
 }
