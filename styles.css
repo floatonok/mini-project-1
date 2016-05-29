@@ -200,13 +200,13 @@ article {
 .border-works {
     background: url(./images/border-tl.png) no-repeat, url(./images/border-br.png) right bottom no-repeat;
     background-origin: border-box;
-    background-size:20%;
+    background-size:24%;
 }
 
 .border-quotes {
     background: url(./images/border-bl.png) left bottom no-repeat, url(./images/border-tr.png) right top no-repeat;
     background-origin: border-box;
-    background-size:20%;
+    background-size:28%;
 }
 
 /*grid content*/
