@@ -133,6 +133,7 @@ article {
     border-right: 0;
 }
 
+
 /*grid border*/
 
 .NS {
@@ -345,5 +346,14 @@ footer {
         height: 95px;
     }
 
+    /*quotes*/
 
+    .main-quotes {
+        flex-direction: column;
+    }
+
+    .main-quotes .border-quotes {
+        border: 2px dashed black;
+        border-bottom: 0;
+    }
 }
